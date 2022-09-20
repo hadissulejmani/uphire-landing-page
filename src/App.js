@@ -4,8 +4,6 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import ResetPassword from "./pages/ResetPassword";
 
-import "./App.css";
-
 function App() {
   return (
     <BrowserRouter>

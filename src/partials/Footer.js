@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="sm:col-span-12 lg:col-span-3">
             <div className="mb-2">
               {/* Logo */}
-              <Link to="/" className="inline-block" aria-label="Cruip">
+              <Link to="/" className="inline-block" aria-label="uphire">
                 <svg
                   className="w-8 h-8"
                   viewBox="0 0 32 32"
@@ -301,13 +301,13 @@ const Footer = () => {
 
           {/* Copyrights note */}
           <div className="text-sm text-gray-600 mr-4">
+            Copyright &copy;
             <a
-              className="text-blue-600 hover:underline"
+              className="text-blue-600 hover:underline ml-1"
               href="https://uphire.com/"
             >
               upHire
             </a>
-            . All rights reserved.
           </div>
         </div>
       </div>

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Modal from "../utils/Modal";
 
 import HeroImage from "../assets/images/hero-image.png";
-
+import "../index.css";
 function HeroHome() {
   const [videoModalOpen, setVideoModalOpen] = useState(false);
 
@@ -48,9 +48,9 @@ function HeroHome() {
               className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4"
               data-aos="zoom-y-out"
             >
-              Make your website{" "}
+              Hire the best{" "}
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">
-                wonderful
+                engineers
               </span>
             </h1>
             <div className="max-w-3xl mx-auto">
@@ -59,8 +59,7 @@ function HeroHome() {
                 data-aos="zoom-y-out"
                 data-aos-delay="150"
               >
-                Our landing page template works on all devices, so you only have
-                to set it up once, and get beautiful results forever.
+                See what other recruiters think of your candidate.
               </p>
               <div
                 className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center"
