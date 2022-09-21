@@ -1,26 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=fallback');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-
-/* Additional styles */
-@import 'assets/css/additional-styles/utility-patterns.css';
-@import 'assets/css/additional-styles/range-slider.css';
-@import 'assets/css/additional-styles/toggle-switch.css';
-@import 'assets/css/additional-styles/theme.css';
-
-
-/* Additional Tailwind directives: https://tailwindcss.com/docs/functions-and-directives/#responsive */
-@layer utilities {
-  .rtl {
-    direction: rtl;
-  }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* See Alpine.js: https://github.com/alpinejs/alpine#x-cloak */
-[x-cloak=""] {
-  display: none;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
