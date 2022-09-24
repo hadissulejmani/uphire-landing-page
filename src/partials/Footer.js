@@ -6,9 +6,9 @@ const Footer = () => {
     <footer>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Top area: Blocks */}
-        <div className="grid sm:grid-cols-12 gap-8 py-8 md:py-12 border-t border-gray-200">
+        <div className="grid sm:grid-cols-6 gap-8 py-8 md:py-12 border-t border-gray-200">
           {/* 1st block */}
-          <div className="sm:col-span-12 lg:col-span-3">
+          <div className="sm:col-span-12 lg:col-span-2">
             <div className="mb-2">
               {/* Logo */}
               <Link to="/" className="inline-block" aria-label="uphire">
@@ -59,7 +59,7 @@ const Footer = () => {
           </div>
 
           {/* 2nd block */}
-          <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
+          {/*<div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
             <h6 className="text-gray-800 font-medium mb-2">Products</h6>
             <ul className="text-sm">
               <li className="mb-2">
@@ -103,10 +103,10 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
-          </div>
+          </div>/*}
 
           {/* 3rd block */}
-          <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
+          <div className="sm:col-span-full md:col-span-3 lg:col-span-1">
             <h6 className="text-gray-800 font-medium mb-2">Resources</h6>
             <ul className="text-sm">
               <li className="mb-2">
@@ -153,7 +153,7 @@ const Footer = () => {
           </div>
 
           {/* 4th block */}
-          <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
+          <div className="sm:col-span-6 md:col-span-3 lg:col-span-1">
             <h6 className="text-gray-800 font-medium mb-2">Company</h6>
             <ul className="text-sm">
               <li className="mb-2">
@@ -200,7 +200,7 @@ const Footer = () => {
           </div>
 
           {/* 5th block */}
-          <div className="sm:col-span-6 md:col-span-3 lg:col-span-3">
+          <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
             <h6 className="text-gray-800 font-medium mb-2">Subscribe</h6>
             <p className="text-sm text-gray-600 mb-4">
               Get the latest news and articles to your inbox every month.
@@ -305,13 +305,7 @@ const Footer = () => {
 
           {/* Copyrights note */}
           <div className="text-sm text-gray-600 mr-4">
-            Copyright &copy;
-            <a
-              className="text-blue-600 hover:underline ml-1"
-              href="https://uphire.com/"
-            >
-              upHire
-            </a>
+            &copy; {new Date().getFullYear()} upHire
           </div>
         </div>
       </div>
