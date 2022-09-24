@@ -19,12 +19,16 @@ const Header = () => {
         !top && "bg-white backdrop-blur-sm shadow-lg"
       }`}
     >
-      <div className="max-w-6xl mx-auto px-5 sm:px-6">
+      <div className="max-w-9xl mx-10 px-5 sm:px-6">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Site branding */}
-          <div className="flex-shrink-0 mr-4">
+          <div className="flex flex-grow">
             {/* Logo */}
-            <Link to="/" className="block" aria-label="Cruip">
+            <Link
+              to="/"
+              className="flex flex-grow justify-start flex-wrap items-center"
+              aria-label="uphire"
+            >
               <svg
                 className="w-8 h-8"
                 viewBox="0 0 32 32"
@@ -52,6 +56,9 @@ const Header = () => {
                   fillRule="nonzero"
                 />
               </svg>
+              <span className="font-bold ml-2 text-2xl subpixel-antialiased tracking-wide text-gray-700">
+                upHire
+              </span>
             </Link>
           </div>
 
@@ -69,11 +76,11 @@ const Header = () => {
               <li>
                 <Link
                   to="/signup"
-                  className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3"
+                  className="btn-sm text-white bg-blue-500 hover:bg-blue-800 ml-3"
                 >
                   <span>Sign up</span>
                   <svg
-                    className="w-3 h-3 fill-current text-gray-400 flex-shrink-0 ml-2 -mr-1"
+                    className="w-3 h-3 fill-current text-white flex-shrink-0 ml-2 -mr-1"
                     viewBox="0 0 12 12"
                     xmlns="http://www.w3.org/2000/svg"
                   >
