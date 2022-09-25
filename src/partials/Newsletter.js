@@ -2,9 +2,9 @@ import React from "react";
 
 function Newsletter() {
   return (
-    <section>
+    <section className="relative">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="pb-12 md:pb-20">
+        <div className="py-12 md:py-20">
           {/* CTA box */}
           <div
             className="relative bg-gray-900 rounded py-10 px-8 md:py-16 md:px-12 shadow-2xl overflow-hidden"
@@ -97,10 +97,10 @@ function Newsletter() {
             <div className="relative flex flex-col lg:flex-row justify-between items-center">
               {/* CTA content */}
               <div className="text-center lg:text-left lg:max-w-xl">
-                <h3 className="h3 text-white mb-2">Powering your business</h3>
+                <h3 className="h3 text-white mb-2">Hiring made easier</h3>
                 <p className="text-gray-300 text-lg mb-6">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit nemo
-                  expedita voluptas culpa sapiente.
+                  Get monthly notifications by our team to be up to date with
+                  the newest features.
                 </p>
 
                 {/* CTA form */}
@@ -120,10 +120,9 @@ function Newsletter() {
                     </a>
                   </div>
                   {/* Success message */}
-                  {/* <p className="text-sm text-gray-400 mt-3">Thanks for subscribing!</p> */}
-                  <p className="text-sm text-gray-400 mt-3">
-                    7 days free trial. No credit card required.
-                  </p>
+                  {/*<p className="text-sm text-gray-400 mt-3">
+                    Thanks for subscribing!
+                  </p>*/}
                 </form>
               </div>
             </div>

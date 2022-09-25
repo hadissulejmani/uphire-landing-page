@@ -6,9 +6,9 @@ const Footer = () => {
     <footer>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Top area: Blocks */}
-        <div className="grid sm:grid-cols-12 gap-8 py-8 md:py-12 border-t border-gray-200">
+        <div className="grid sm:grid-cols-6 gap-8 py-8 md:py-12 border-t border-gray-200">
           {/* 1st block */}
-          <div className="sm:col-span-12 lg:col-span-3">
+          <div className="sm:col-span-12 lg:col-span-2">
             <div className="mb-2">
               {/* Logo */}
               <Link to="/" className="inline-block" aria-label="uphire">
@@ -59,7 +59,7 @@ const Footer = () => {
           </div>
 
           {/* 2nd block */}
-          <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
+          {/*<div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
             <h6 className="text-gray-800 font-medium mb-2">Products</h6>
             <ul className="text-sm">
               <li className="mb-2">
@@ -103,10 +103,10 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
-          </div>
+          </div>/*}
 
           {/* 3rd block */}
-          <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
+          <div className="sm:col-span-full md:col-span-3 lg:col-span-1">
             <h6 className="text-gray-800 font-medium mb-2">Resources</h6>
             <ul className="text-sm">
               <li className="mb-2">
@@ -153,7 +153,7 @@ const Footer = () => {
           </div>
 
           {/* 4th block */}
-          <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
+          <div className="sm:col-span-6 md:col-span-3 lg:col-span-1">
             <h6 className="text-gray-800 font-medium mb-2">Company</h6>
             <ul className="text-sm">
               <li className="mb-2">
@@ -200,7 +200,7 @@ const Footer = () => {
           </div>
 
           {/* 5th block */}
-          <div className="sm:col-span-6 md:col-span-3 lg:col-span-3">
+          <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
             <h6 className="text-gray-800 font-medium mb-2">Subscribe</h6>
             <p className="text-sm text-gray-600 mb-4">
               Get the latest news and articles to your inbox every month.
@@ -286,14 +286,18 @@ const Footer = () => {
               <Link
                 to="#"
                 className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
-                aria-label="Facebook"
+                aria-label="Linkedin"
               >
                 <svg
                   className="w-8 h-8 fill-current"
-                  viewBox="0 0 32 32"
                   xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 32 32"
                 >
-                  <path d="M14.023 24L14 17h-3v-3h3v-2c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V14H21l-1 3h-2.72v7h-3.257z" />
+                  <path d="M 8.6425781 4 C 7.1835781 4 6 5.181625 6 6.640625 C 6 8.099625 7.182625 9.3085938 8.640625 9.3085938 C 10.098625 9.3085938 11.283203 8.099625 11.283203 6.640625 C 11.283203 5.182625 10.101578 4 8.6425781 4 z M 21.535156 11 C 19.316156 11 18.0465 12.160453 17.4375 13.314453 L 17.373047 13.314453 L 17.373047 11.310547 L 13 11.310547 L 13 26 L 17.556641 26 L 17.556641 18.728516 C 17.556641 16.812516 17.701266 14.960938 20.072266 14.960938 C 22.409266 14.960937 22.443359 17.145609 22.443359 18.849609 L 22.443359 26 L 26.994141 26 L 27 26 L 27 17.931641 C 27 13.983641 26.151156 11 21.535156 11 z M 6.3632812 11.310547 L 6.3632812 26 L 10.923828 26 L 10.923828 11.310547 L 6.3632812 11.310547 z"></path>
                 </svg>
               </Link>
             </li>
@@ -301,13 +305,7 @@ const Footer = () => {
 
           {/* Copyrights note */}
           <div className="text-sm text-gray-600 mr-4">
-            Copyright &copy;
-            <a
-              className="text-blue-600 hover:underline ml-1"
-              href="https://uphire.com/"
-            >
-              upHire
-            </a>
+            &copy; {new Date().getFullYear()} upHire
           </div>
         </div>
       </div>
